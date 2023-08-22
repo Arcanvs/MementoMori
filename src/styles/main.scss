@@ -14,3 +14,14 @@
 .painted{
     background-color: black;
 }
+
+.dflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 986px;
+    margin:auto;
+}
+.wflex{
+    display: flex;
+}
