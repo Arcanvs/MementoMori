@@ -33,7 +33,19 @@ body{
     flex-wrap: wrap;
     max-width: 986px;
     margin:auto;
+    padding: 20px 0 60px 0;
 }
 .wflex{
     display: flex;
+}
+
+.button__date{
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    height: 24px;
+    cursor: pointer;
+
 }

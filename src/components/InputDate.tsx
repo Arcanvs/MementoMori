@@ -1,8 +1,13 @@
-const InputDate = ({dates , setDates}) => {
+interface InputDateProps {
+    dates: string;
+    setDates: (date: string) => void;
+}
+
+const InputDate: React.FC<InputDateProps> = ({ dates, setDates }) => {
     const maxDate = new Date().toISOString().slice(0, 10);
     return (
-        <div className="form-group">
-            <input type="date" value={dates} max={maxDate} onChange={e => setDates(e.target.value)} />
+        <div>
+            <input className="button__date" type="date" value={dates} max={maxDate} onChange={e => setDates(e.target.value)} />
         </div>
     );
 }
